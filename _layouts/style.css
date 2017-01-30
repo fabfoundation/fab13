@@ -39,7 +39,7 @@ section{
 
 .row {
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 0px
 }
 
 @media(min-width:767px) {
@@ -541,11 +541,17 @@ fieldset[disabled] .btn-xl.active {
 /*---WEBSITE HEADERS-*/ 
 
 header {
+    background-color: #1c3557;
+}
+
+
+.main-banner{
+    height: 50%;
     color: #ffffff;
     text-align: center;
     background-attachment: scroll;
-    background-image: url(../img/santiago.jpg);
-    background-color: #1b1b1b;
+    background-image: url(../img/banner-web-blue.svg);
+    background-color: #1c3557;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -555,14 +561,6 @@ header {
     position: relative;
 }
 
-.layer {
-    background-color: rgba(36, 34, 51, 0.7);
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 header .intro-text {
     padding: 13% 15% 0px 15%;
