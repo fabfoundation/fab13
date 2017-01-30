@@ -299,7 +299,7 @@ fieldset[disabled] .btn-primary.active {
 
 
 
-.clear {
+.claro {
     padding: 15px 38px; 
     border-radius: 0;
     text-transform: none;
@@ -317,13 +317,15 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media(min-width:992px) {
-    .clear {
+    .claro{
         margin-top: 150px;
     }
 }
 
 
-.clear:hover {
+.claro:hover,
+.claro:active,
+.claro:focus {
     border: 4px solid #dbe5d8; 
     color: #e53946;
     background-color: #dbe5d8;
