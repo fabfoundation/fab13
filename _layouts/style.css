@@ -316,7 +316,7 @@ fieldset[disabled] .btn-primary.active {
     margin-top: 20px;
 }
 
-@media(min-width:992px) {
+@media(min-width:767px) {
     .claro{
         margin-top: 150px;
     }
