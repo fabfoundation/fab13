@@ -8,13 +8,13 @@
         <img src= "/img/title.svg" style ="padding-top: 60px; padding-bottom: 20px;"/> 
       </div> 
       <div class="col-xs-12 col-sm-8 col-md-6">
-        <a href="https://welcu.com/fab-lab-santiago/fab13" target="_blank" class="page-scroll btn btn-xl"><i class="fa fa-ticket fa-1x"></i>&nbsp; &nbsp;Buy tickets</a>
+        <a class="page-scroll btn btn-xl" data-toggle="modal" data-target="#buy"><i class="fa fa-ticket fa-1x"></i>&nbsp; &nbsp;Buy tickets</a>
         <a class="page-scroll btn claro" data-toggle="modal" data-target="#subscribe"><i class="fa fa-envelope fa-1x" ></i>&nbsp; &nbsp; Keep me updated</a>
       </div>
     </div>
   </div> 
 
-  <!-- Modal -->
+  <!-- Mailchimp 'keep me updated' Modal -->
   <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -55,5 +55,32 @@
       </div>
     </div>
   </div>
+
+  <!-- Buy tickets Filter Modal -->
+  <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Are you a Fab Lab Member or a Fab Academy Instructor?</h4> 
+          <p style="color:#ffffff">If so, type the code we have sent you in the box below. </p>
+          <input type="password" class="form-control" id="">
+          <br>
+          <h4 class="modal-title">If not, fill the form below to receive access to early bird tickets on the 1st of April!</h4>
+          <input type="text" class="form-control" id=""> 
+
+        </div>
+
+        <div class="modal-body">
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
 
 </header>
