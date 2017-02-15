@@ -58,25 +58,26 @@
 
   <!-- Buy tickets Filter Modal -->
   <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
+    <div class="modal-dialog" role="document" >
+      <div class="modal-content" style="background-color: #ffffff">
+        <div class="modal-header" style="background-color: #ffffff">
         </div>
 
-        <div class="modal-body">
+        <div class="modal-body" style="background-color: #ffffff">
           <form>
 
-<p>Are you a Lab Member? Enter your name:
+<p style="color: #000">Are you a Lab Member? 
 
-  <input type="text" name="text2">
+
+  <!--<input type="text" name="text2">-->
 
 </p>
 
-<p> Enter the registration code we have sent you:
+<p style="color: #000"> Enter the registration code we have sent you:
 
 <input type="password" name="text1">
 
-<input type="button" value="Check In" name="Submit" onclick=javascript:validate(text2.value,"myName",text1.value,"leopoldo4444") >
+<input type="button" value="Check In" name="Submit" onclick=javascript:validate(text1.value,"leopoldo4444") >
 
 </p>
 
@@ -94,11 +95,11 @@
 <script language = "javascript">
  
 
-function validate(text1,text2,text3,text4)
+function validate(text1,text2)
 
 {
 
- if (text1==text2 && text3==text4)
+ if (text1==text2)
 
  load('https://welcu.com/fab-lab-santiago/fab13');
 
