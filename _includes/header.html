@@ -61,25 +61,66 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Are you a Fab Lab Member or a Fab Academy Instructor?</h4> 
-          <p style="color:#ffffff">If so, type the code we have sent you in the box below. </p>
-          <input type="password" class="form-control" id="">
-          <br>
-          <h4 class="modal-title">If not, fill the form below to receive access to early bird tickets on the 1st of April!</h4>
-          <input type="text" class="form-control" id=""> 
-
         </div>
 
         <div class="modal-body">
+          <form>
+
+<p>Are you a Lab Member? Enter your name:
+
+  <input type="text" name="text2">
+
+</p>
+
+<p> Enter the registration code we have sent you:
+
+<input type="password" name="text1">
+
+<input type="button" value="Check In" name="Submit" onclick=javascript:validate(text2.value,"myName",text1.value,"leopoldo4444") >
+
+</p>
+
+ 
+
+</form>
           
         </div>
 
       </div>
     </div>
   </div>
+
+
+<script language = "javascript">
+ 
+
+function validate(text1,text2,text3,text4)
+
+{
+
+ if (text1==text2 && text3==text4)
+
+ load('https://welcu.com/fab-lab-santiago/fab13');
+
+ else
+
+ {
+
+  load('failure.htm');
+
+ }
+
+}
+
+function load(url)
+
+{
+
+ location.href=url;
+
+}
+
+</script>
 
 
 
