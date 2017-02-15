@@ -66,24 +66,37 @@
         <div class="modal-body" style="background-color: #ffffff">
           <form>
 
-<p style="color: #000">Are you a Lab Member? 
+            <p style="color: #000">Are you a Lab Member? 
 
 
-  <!--<input type="text" name="text2">-->
+              <!--<input type="text" name="text2">-->
 
-</p>
+            </p>
 
-<p style="color: #000"> Enter the registration code we have sent you:
+            <p style="color: #000"> Enter the registration code we have sent you:
 
-<input type="password" name="text1">
+              <input type="password" name="text1">
 
-<input type="button" value="Check In" name="Submit" onclick=javascript:validate(text1.value,"leopoldo4444") >
+              <input type="button" value="Check In" name="Submit" onclick=javascript:validate(text1.value,"FAB13CHILE")>
 
-</p>
+            </p>
 
- 
+            <br>
 
-</form>
+            <p style="color: #000">If not, please fill the form below to receive access to the Early Bird tickets for general public! </p>
+
+            <a class="typeform-share button" href="https://fabcityresearch.typeform.com/to/dQ8Pwr" data-mode="1" target="_blank">Register</a>
+            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+
+
+          </form>
           
         </div>
 
@@ -92,24 +105,24 @@
   </div>
 
 
-<script language = "javascript">
- 
+  <script language = "javascript">
 
-function validate(text1,text2)
 
-{
+  function validate(text1,text2)
 
- if (text1==text2)
+  {
 
- load('https://welcu.com/fab-lab-santiago/fab13');
+   if (text1==text2)
 
- else
+     load('https://welcu.com/fab-lab-santiago/fab13');
 
- {
+   else
 
-  load('failure.htm');
+   {
 
- }
+    load('failure.htm');
+
+  }
 
 }
 
