@@ -1,5 +1,4 @@
 
-  <!-- Buy tickets Filter Modal -->
   <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document" >
       <div class="modal-content" style= "background-color: #ffffff; height: 400px;">
@@ -14,7 +13,7 @@
             <p style="color: #000">Are you a Fab Lab Member?</p>
             <p style="color: #000"> Please enter the Early Bird Code for Fab Lab Network Members we have sent you:
               <input type="password" name="text1">
-              <input type="button" value="Check In" name="Submit" onclick=javascript:validate(text1.value,"FAB13CHILE")>
+              <input type="button" value="Check In" name="Submit" onclick=javascript:validate(text1.value)>
             </p>
 
             <p style="color: #000">If not, please register below. You will be notified once we open access to general Early Bird tickets!  </p>
@@ -31,11 +30,12 @@
   <script language = "javascript">
 
 
-  function validate(text1,text2)
+  function validate(text1)
+
 
   {
 
-   if (text1==text2)
+   if (text1=='FAB13CHILE')
 
      load('https://welcu.com/fab-lab-santiago/fab13');
 
@@ -43,7 +43,7 @@
 
    {
 
-    load('failure.htm');
+    alert("Wrong registration code!");
 
   }
 
